@@ -1,6 +1,8 @@
 package engine.tests;
 
 import engine.Screen;
+import engine.terrain.Chunk;
+import engine.terrain.Map;
 import engine.terrain.SimplexNoise;
 
 import javax.imageio.ImageIO;

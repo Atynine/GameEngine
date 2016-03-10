@@ -1,4 +1,4 @@
-package engine.tests;
+package engine.terrain;
 
 import java.awt.Color;
 import java.awt.Graphics;

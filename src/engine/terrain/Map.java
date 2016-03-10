@@ -1,6 +1,4 @@
-package engine.tests;
-
-import engine.terrain.SimplexNoise;
+package engine.terrain;
 
 public class Map {
     private static final int CHUNK_SIZE = 64;
