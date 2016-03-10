@@ -24,6 +24,8 @@ public class Chunk {
                 g.fillRect(x,y,1,1);
             }
         }
+        //Save memory
+        vals = new float[0][0];
     }
     private Color getColor(float t, SortedMap<Float, Color> map){
         t=(t+1)/2;

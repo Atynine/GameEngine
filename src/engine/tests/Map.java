@@ -3,10 +3,10 @@ package engine.tests;
 import engine.terrain.SimplexNoise;
 
 public class Map {
-    private static final int CHUNK_SIZE = 32;
-    private static final int OCTAVES = 60;
-    private static final float ROUGHNESS = .3f;
-    private static final float SCALE = .01f;
+    private static final int CHUNK_SIZE = 64;
+    private static final int OCTAVES = 8;
+    private static final float ROUGHNESS = .5f;
+    private static final float SCALE = .002f;
     private Chunk[][] map;
     private int size;
     public Map(int size){
