@@ -19,7 +19,7 @@ public class Game extends Screen {
     }
     @Override
     public void onStart() {
-        particles = new CopyOnWriteArrayList<CollisionParticle>();
+        particles = new CopyOnWriteArrayList<>();
     }
 
     @Override

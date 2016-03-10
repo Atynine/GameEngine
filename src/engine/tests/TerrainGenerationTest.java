@@ -12,7 +12,7 @@ import java.io.File;
 import java.io.IOException;
 import java.util.TreeMap;
 
-public class TerrainGeneration extends Screen {
+public class TerrainGenerationTest extends Screen {
     private static final TreeMap<Float,Color> terrain = new TreeMap<Float,Color>();
     {
         //Insert layers into terrain map
@@ -45,7 +45,7 @@ public class TerrainGeneration extends Screen {
     private int containerWidth = 1;
     private boolean saved = false;
     int frames = 0;
-    public TerrainGeneration(String title, int width, int height) {
+    public TerrainGenerationTest(String title, int width, int height) {
         super(title, width, height);
     }
     @Override
@@ -132,6 +132,6 @@ public class TerrainGeneration extends Screen {
 
 
     public static void main(String[] args){
-        TerrainGeneration game = new TerrainGeneration("Terrain Test", 500,500);
+        TerrainGenerationTest game = new TerrainGenerationTest("Terrain Test", 500,500);
     }
 }
