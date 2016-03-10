@@ -1,10 +1,11 @@
 package engine.particle;
 
 import engine.entity.Entity;
+import engine.entity.Paintable;
 
 import java.awt.*;
 
-public abstract class Particle extends Entity {
+public abstract class Particle extends Entity implements Paintable{
     protected Color color = new Color(50,50,50);
     protected float speed = 1;
     public Particle(float x, float y, float width, float height) {
@@ -14,11 +15,6 @@ public abstract class Particle extends Entity {
         super(x, y, width, height);
         this.color = color;
     }
-
-    @Override
-    public abstract void onPaint(Graphics2D g);
-    @Override
-    public abstract void update(long delta);
 
     public Color getColor() {
         return color;

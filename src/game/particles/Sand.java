@@ -1,11 +1,12 @@
 package game.particles;
 
+import engine.entity.Paintable;
 import engine.particle.CollisionParticle;
 import java.awt.*;
 import java.awt.geom.Point2D;
 import java.util.concurrent.CopyOnWriteArrayList;
 
-public class Sand extends CollisionParticle {
+public class Sand extends CollisionParticle implements Paintable {
     private int maxX, maxY;
     public Sand(float x, float y, float width, float height) {
         super(x, y, width, height);

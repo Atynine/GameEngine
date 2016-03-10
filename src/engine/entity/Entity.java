@@ -1,6 +1,5 @@
 package engine.entity;
 
-import java.awt.*;
 import java.awt.geom.Point2D;
 import java.awt.geom.Rectangle2D;
 
@@ -11,7 +10,6 @@ public abstract class Entity extends Rectangle2D.Float {
         super(x,y,w,h);
     }
 
-    public abstract void onPaint(Graphics2D g);
     public abstract void update(long delta);
 
     public boolean getLocation(){
