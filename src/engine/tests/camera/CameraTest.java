@@ -34,7 +34,7 @@ public class CameraTest extends Screen {
     private int containerHeight = 1;
     private int containerWidth = 1;
     private boolean saved = false;
-    private Camera camera = new Camera(0,0,0,0);
+    private Camera camera = new Player(0,0,0,0);
     int frames = 0;
     public CameraTest(String title, int width, int height) {
         super(title, width, height);

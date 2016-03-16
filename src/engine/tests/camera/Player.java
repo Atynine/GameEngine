@@ -4,8 +4,8 @@ import engine.entity.Camera;
 
 import java.awt.event.KeyEvent;
 
-public class CameraTest_Camera extends Camera {
-    public CameraTest_Camera(float x, float y, float w, float h) {
+public class Player extends Camera {
+    public Player(float x, float y, float w, float h) {
         super(x, y, w, h);
     }
 

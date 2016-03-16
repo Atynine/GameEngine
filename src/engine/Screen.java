@@ -1,5 +1,8 @@
 package engine;
 
+import engine.input.Keyboard;
+import engine.input.Mouse;
+
 import javax.swing.*;
 import java.awt.*;
 
@@ -13,6 +16,8 @@ public abstract class Screen extends JPanel implements Runnable{
         this.frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         this.frame.add(this);
         this.frame.setVisible(true);
+        this.addMouseListener(new Mouse());
+        frame.addKeyListener(new Keyboard());
         this.onStart();
         new Thread(this).start();
     }
