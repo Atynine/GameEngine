@@ -28,12 +28,14 @@ public class InputTest extends Screen {
     public void onPaint(Graphics2D g) {
         g.setColor(Color.BLACK);
         int y = 10;
+        //Loop through all mouse buttons and display if they're pressed
         for(int i = 0; i < MouseInfo.getNumberOfButtons()+1; i++){
             g.drawString("Button " + i + ": " + (Mouse.isButtonPressed(i) ? "true" : "false"), 10, y);
             y+=10;
         }
         int x = 100;
         y = 10;
+        //Loop through all possible keyboard buttons and display if they're pressed
         for(int i = 0; i < 500000; i++){
             String text = KeyEvent.getKeyText(i);
             if(text.contains("Unknown")) continue;
