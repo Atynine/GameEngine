@@ -4,6 +4,11 @@ import java.awt.*;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 
+/*
+@author Rylan Hoss
+@description Handles mouse input for games
+ */
+
 public class Mouse implements MouseListener {
 
     private static boolean[] buttons = new boolean[MouseInfo.getNumberOfButtons()+1];

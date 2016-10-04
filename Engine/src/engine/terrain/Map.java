@@ -1,5 +1,10 @@
 package engine.terrain;
 
+/*
+@author Rylan Hoss
+@description Structure for creating/removing chunks from the map
+ */
+
 public class Map {
     private static final int CHUNK_SIZE = 64;
     private static final int OCTAVES = 8;
@@ -15,7 +20,9 @@ public class Map {
         return map[x][y] != null;
     }
     public void generate(int x, int y){
+        //Check whether the input point is generated or not
         if(isGenerated(x,y)) return;
+        //Generate a chunk to place in the map
         map[x][y] = new Chunk(x,y,SimplexNoise.generateOctavedSimplexNoise(CHUNK_SIZE,CHUNK_SIZE,x*CHUNK_SIZE,y*CHUNK_SIZE,OCTAVES,ROUGHNESS,SCALE));
     }
     public Chunk getChunk(int x, int y){

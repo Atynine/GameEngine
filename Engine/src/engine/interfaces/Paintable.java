@@ -1,4 +1,4 @@
-package engine.entity;
+package engine.interfaces;
 
 import java.awt.*;
 

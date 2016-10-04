@@ -3,6 +3,11 @@ package engine.entity;
 import java.awt.geom.Point2D;
 import java.awt.geom.Rectangle2D;
 
+/*
+@author Rylan Hoss
+@description Simple entity. No painting.
+ */
+
 public abstract class Entity extends Rectangle2D.Float {
     protected boolean alive = true;
 

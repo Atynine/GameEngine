@@ -1,9 +1,14 @@
 package engine.particle;
 
 import engine.entity.Entity;
-import engine.entity.Paintable;
+import engine.interfaces.Paintable;
 
 import java.awt.*;
+
+/*
+@author Rylan Hoss
+@description Simple particle with no collision
+ */
 
 public abstract class Particle extends Entity implements Paintable{
     protected Color color = new Color(50,50,50);

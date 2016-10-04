@@ -3,6 +3,11 @@ package engine.particle;
 import java.awt.*;
 import java.util.concurrent.CopyOnWriteArrayList;
 
+/*
+@author Rylan Hoss
+@description A particle that can collide with other collision enabled objects within the game
+ */
+
 public abstract class CollisionParticle extends Particle {
     public CollisionParticle(float x, float y, float width, float height) {
         super(x, y, width, height);
