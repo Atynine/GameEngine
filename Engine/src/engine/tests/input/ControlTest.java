@@ -5,14 +5,14 @@ import engine.Screen;
 import java.awt.*;
 
 public class ControlTest extends Screen {
-    private ControlTest_Player player = new ControlTest_Player(100,100,5,5);
+    private ControlTest_Player player;
     public ControlTest(String title, int width, int height) {
         super(title, width, height);
     }
 
     @Override
     public void onStart() {
-
+        player = new ControlTest_Player(100,100,5,5);
     }
 
     @Override

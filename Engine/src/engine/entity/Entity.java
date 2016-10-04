@@ -12,8 +12,12 @@ public abstract class Entity extends Rectangle2D.Float {
 
     public abstract void update(long delta);
 
-    public boolean getLocation(){
-        return this.contains(new Point2D.Float(this.x,this.y));
+    public void setLocation(float x , float y){
+        this.x = x;
+        this.y = y;
+    }
+    public Point2D.Float getLocation(){
+        return new Point2D.Float(this.x,this.y);
     }
     public boolean isAlive(){
         return this.alive;
