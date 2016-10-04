@@ -3,6 +3,11 @@ package engine.entity;
 import java.awt.geom.Point2D;
 import java.awt.geom.Rectangle2D;
 
+/*
+@author Rylan Hoss
+@description Simple entity. No painting.
+ */
+
 public abstract class Entity extends Rectangle2D.Float {
     protected boolean alive = true;
 
@@ -12,8 +17,12 @@ public abstract class Entity extends Rectangle2D.Float {
 
     public abstract void update(long delta);
 
-    public boolean getLocation(){
-        return this.contains(new Point2D.Float(this.x,this.y));
+    public void setLocation(float x , float y){
+        this.x = x;
+        this.y = y;
+    }
+    public Point2D.Float getLocation(){
+        return new Point2D.Float(this.x,this.y);
     }
     public boolean isAlive(){
         return this.alive;

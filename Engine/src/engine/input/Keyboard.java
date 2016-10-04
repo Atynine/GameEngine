@@ -4,6 +4,11 @@ import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 import java.util.HashMap;
 
+/*
+@author Rylan Hoss
+@description Handles keyboard input for games
+ */
+
 public class Keyboard implements KeyListener {
     private static HashMap<Integer, Boolean> keys = new HashMap<>();
     @Override

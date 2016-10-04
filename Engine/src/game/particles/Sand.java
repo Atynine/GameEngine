@@ -1,6 +1,6 @@
 package game.particles;
 
-import engine.entity.Paintable;
+import engine.interfaces.Paintable;
 import engine.particle.CollisionParticle;
 import java.awt.*;
 import java.awt.geom.Point2D;

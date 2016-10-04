@@ -6,6 +6,11 @@ import engine.input.Mouse;
 import javax.swing.*;
 import java.awt.*;
 
+/*
+    @author Rylan Hoss
+    @description Main component for games. Controls most input/output needed to make a simple game.
+ */
+
 public abstract class Screen extends JPanel implements Runnable{
     private JFrame frame;
     public Screen(String title, int width, int height){
@@ -37,8 +42,8 @@ public abstract class Screen extends JPanel implements Runnable{
     public void run() {
         long lastUpdate = System.currentTimeMillis();
         while(this.frame.isVisible()){
+            //Get time from last update
             long delta = (System.currentTimeMillis()-lastUpdate);
-            //Update last time updated
             lastUpdate = System.currentTimeMillis();
             this.update(delta);
         }
