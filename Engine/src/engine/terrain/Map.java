@@ -7,9 +7,9 @@ package engine.terrain;
 
 public class Map {
     private static final int CHUNK_SIZE = 64;
-    private static final int OCTAVES = 8;
-    private static final float ROUGHNESS = .5f;
-    private static final float SCALE = .002f;
+    private static final int OCTAVES = 48;
+    private static final float ROUGHNESS = .55f;
+    private static final float SCALE = .001f;
     private Chunk[][] map;
     private int size;
     public Map(int size){

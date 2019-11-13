@@ -33,7 +33,7 @@ public class Chunk {
         vals = new float[0][0];
     }
 
-    private Color getColor(float height, SortedMap<Float, Color> map){
+    public static Color getColor(float height, SortedMap<Float, Color> map){
         height = (height+1)/2;
         if(height < 0) height = 0;
         Object[] entries = map.entrySet().toArray();
@@ -56,7 +56,7 @@ public class Chunk {
        
         return Color.BLACK;
     }
-     public float normalize(float val, float min, float max){
+    public static float normalize(float val, float min, float max){
         return (val-min)/(max-min);
     }
     public float[][] getValues(){
