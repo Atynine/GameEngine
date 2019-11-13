@@ -1,13 +1,13 @@
 package engine.tests.input;
 
 import engine.entity.Entity;
-import engine.entity.Paintable;
 import engine.input.Keyboard;
+import engine.interfaces.Paintable;
 
 import java.awt.*;
 import java.awt.event.KeyEvent;
 
-public class ControlTest_Player extends Entity implements Paintable{
+public class ControlTest_Player extends Entity implements Paintable {
     public ControlTest_Player(float x, float y, float w, float h) {
         super(x, y, w, h);
     }
